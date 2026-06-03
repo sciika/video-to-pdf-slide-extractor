@@ -16,23 +16,21 @@
 - NumPy
 - img2pdf
 
-```bash
-pip install opencv-python numpy img2pdf
+`pip install opencv-python numpy img2pdf`
 
 ## 使い方（実行手順）
 1. 動画ファイルの準備
-実行するPythonスクリプト（video_to_pdf.py）と同じディレクトリ（フォルダ）内に、解析したい講義動画（例: Lecture6.mp4）を配置してください。
+実行するPythonスクリプト（`video_to_pdf.py`）と同じディレクトリ（フォルダ）内に、解析したい講義動画（例: `Lecture6.mp4`）を配置してください。
 ※動画ファイル名が異なる場合は、コード内の VIDEO_PATH 変数を書き換えてください。
 
 2. スクリプトの実行
 ターミナルやコマンドプロンプトからスクリプトを実行します。
 
-```bash
-python video_to_pdf.py
+`python video_to_pdf.py`
 
 3. 画像の目視チェック（不要フレームの削除）
-動画の解析が完了すると、自動的に一時保存用フォルダ（work_images）が作成され、処理が一時停止します。
+動画の解析が完了すると、自動的に一時保存用フォルダ（`work_images`）が作成され、処理が一時停止します。
 画面の指示に従ってフォルダを開き、講師の顔のアップなど、PDFに含めたくない不要な画像を手動で削除してください。
 
 4. PDFの生成
-削除作業が終わったら、ターミナル上で [Enterキー] を押してください。残った画像が自動的に1つのPDF（lecture_complete.pdf）に結合されます。
+削除作業が終わったら、ターミナル上で [Enterキー] を押してください。残った画像が自動的に1つのPDF（`lecture_complete.pdf`）に結合されます。
